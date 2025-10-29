@@ -4,7 +4,7 @@ metadata:
    name: cluster-svc
 spec:
    type: clusterIp
-selector:
-  app: test
-ports:
-  - port: 80
+   selector:
+     app: test
+   ports:
+     - port: 80

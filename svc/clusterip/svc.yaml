@@ -3,7 +3,7 @@ kind: Service
 metadata:
    name: cluster-svc
 spec:
-   type: ClusterIp
+   type: ClusterIP
    selector:
      app: test
    ports:

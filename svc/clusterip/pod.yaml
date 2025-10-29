@@ -1,0 +1,13 @@
+apiVersion: V1
+kind: service
+metadata:
+   name: svc-pod
+   labels: 
+   app: test
+spec:
+   containers:
+     - name: test-co
+       image: nginx:1.29
+       ports:
+         - containerPort: 80
+           protocol: TCP

@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: myown-pod
   labels:
-    app: dummuypod
-Spec:
-  containers:
-    - name: mydummy-containers
-      image: ngixn:1.29
-Ports:
-  - containerPort: 80
-    Protocol: TCP
+    app: dummypod
+spec:
+  containers: 
+    - name: mydummy-container
+      image: nginx:1.29
+      ports:
+        - containerPort: 80
+          protocol: TCP
